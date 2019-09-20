@@ -181,6 +181,10 @@ p{
     margin-top: 2em;
 }
 
+.about.container{
+    display: flexbox;
+}
+
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -334,7 +338,23 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 
+/*.about>.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}*/
 
+.about>.bio-info{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+.about>.contact-form{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
 
 }
 
