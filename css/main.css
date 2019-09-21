@@ -71,6 +71,13 @@ p{
     width: 150px;
 }
 
+
+.big-hero>.container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
 /*tamaños e interlineado de h2 en big-hero*/
 .big-hero h2 {
     font-size: 1.875em;
@@ -87,22 +94,27 @@ p{
 }
 /*segundo container*/
 /* Social links*/
+/*colocando el flex en l pantalla y alineando en filas*/
 .social-links{
     list-style: none;
     padding: 0;
     margin-top: 3em;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
 
 }
 
+/*colocando flex y en fila los "li" "a" de la clase social-links*/
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 2.5em;
     margin: 2px 3px 2px 2px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
 }
 
 /*modificando logo git*/
@@ -237,6 +249,11 @@ p{
     flex-direction: column;
 }
 
+.contact-form>label{
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
@@ -355,21 +372,28 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 
-/*.about>.container{
-    display: flexbox;
-    flex-flow: row wrap;
-}*/
-
-.about>.bio-info{
+.about>.container{
     display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 4em;
 }
 
-.about>.contact-form{
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
+.about>.container>h2{
+    width: 100%;
+
+}
+
+.bio-info{
+    width: 50%;
+}
+
+.contact-form>input{
+    width: 50%;
+}
+
+.contact{
+    width: 50%;
 }
 
 }
