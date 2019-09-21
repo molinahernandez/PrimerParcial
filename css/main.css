@@ -19,6 +19,12 @@ body {
     font-weight: 400;
 }
 
+/*responsive*/
+.container{
+    display: flexbox;
+    padding: 0em; 
+}
+
 /*estilo del header*/
 .header {
     display: flex;
