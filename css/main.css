@@ -10,6 +10,7 @@
 }
 
 /* El estilo base para moviles */
+/*agregando color de fondo, importando fuente y centrando texto en todo el body*/
 body {
     background-color: #112935;
     color: white;
@@ -18,11 +19,13 @@ body {
     font-weight: 400;
 }
 
+/*estilo del header*/
 .header {
     display: flex;
     justify-content: space-between
 }
 
+/*logo*/
 .src-only {
     display: none;
 }
@@ -31,16 +34,19 @@ body {
     display: none;
 }
 
+/*etiquetas "p" caracteristicas*/
 p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
 
+/*isotipo logo*/
 .logo {
     width: 90px;
     margin: 1em;
 }
+
 
 .options {
     color: inherit;
@@ -55,6 +61,7 @@ p{
     align-items: flex-start;
 
 }
+/*tamaño de last-child*/
 .options i:last-child {
     font-size: 1.6rem;
 }
@@ -64,6 +71,7 @@ p{
     width: 150px;
 }
 
+/*tamaños e interlineado de h2 en big-hero*/
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
@@ -71,12 +79,13 @@ p{
     margin-top: 1em ;
 }
 
+/*dando tamaño y color en etiqueta "p" del big-hero*/
 .big-hero p {
     font-size: 0.7em;;
     color: #D7DEE6;
 
 }
-
+/*segundo container*/
 /* Social links*/
 .social-links{
     list-style: none;
@@ -122,11 +131,12 @@ p{
     background-color: #0AC693; 
 }
 
-
+/*container post*/
 .post {
     padding: 1em;
     margin-bottom: -2px;
 }
+/*tamaño para etiqueta h2*/
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -134,16 +144,19 @@ p{
     margin: 1em;
 }
 
+/*Estilo para ul*/
 .post ul {
     list-style: none;
 }
 
+/*definiendo las caracteristicas para las "li" de la "ul"*/
 .post ul li {
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
 }
 
+/*definiendo color de fondo, bordes, interlineado y mas para los articulos*/
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
@@ -152,12 +165,14 @@ p{
     padding-bottom: 2em;
 }
 
+/*definindo ancho y altura para imagenes de los articulos*/
 .post article img{
     height: 150px;
     width: 100%;
     object-fit: cover;
 }
 
+/*caracteristicas para etiqueta "h3" en los articulos*/
 .post article h3 {
     color: #0D5061;
     margin-top: 2em;
@@ -168,6 +183,7 @@ p{
     text-overflow: ellipsis;
 }
 
+/*definiedno color, tamaño y demas caracteristicas para etiqueta "p" de los articulos*/
 .post article p {
     color:#112935;
     font-size: 0.75em;
@@ -181,10 +197,7 @@ p{
     margin-top: 2em;
 }
 
-.about.container{
-    display: flexbox;
-}
-
+/*definiendo caracteristicas para "h2" del abut*/
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -192,10 +205,12 @@ p{
     margin: 2em;
 }
 
+/*anchura de imagen en bio-info*/
 .bio-info img{
    width: 200px;
 }
 
+/*alineado, tamaño, espacio entre letras para etiqueta "p" en bio-info*/
 .bio-info p{
     font-size: 16px;
     padding: 2em;
@@ -204,6 +219,7 @@ p{
     letter-spacing: 2px;
 }
 
+/*clase contact, definiendo direccion, alineado texto, padding*/
 .contact {
     display: flex;
     flex-direction: column;
@@ -211,6 +227,7 @@ p{
     padding: 0px 1em;
 }
 
+/*definiendo el "tamaño" margen superior*/
 .contact * + * {
     margin-top: 1.5em;
 }
@@ -250,7 +267,7 @@ p{
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
-
+/*fondo de color del footer*/
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
@@ -339,9 +356,8 @@ footer .social-links {
        /*TODO: FALTA CSS */
 
 /*.about>.container{
-    display: flex;
+    display: flexbox;
     flex-flow: row wrap;
-    justify-content: center;
 }*/
 
 .about>.bio-info{
