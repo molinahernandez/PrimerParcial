@@ -250,11 +250,13 @@ p{
     margin-top: 1.5em;
 }
 
+/*poniendo en direccion de columna*/
 .contact-form {
     display: flex;
     flex-direction: column;
 }
 
+/*modificando tamaño fuente del label*/
 .contact-form>label{
     font-weight: 100;
     font-size: 1.2em;
@@ -299,7 +301,7 @@ footer{
 footer .social-links {
     margin: 0;
 }
-
+/*caracteristicas para el menu*/
 .menu {
     background-color: #112935;
     position: absolute;
@@ -310,17 +312,22 @@ footer .social-links {
     height: calc(100vh - 60px);
 }
 
+/*alineando menu*/
 .menu {
     list-style: none;
     text-align: left;
     padding: 1em;
 }
+
+/*definiendo la pantalla el padding y margen superior para los "li" en el menu*/
 .menu li {
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
 
+
+/*etiqueta "li" "a" color y decoracion del texto*/
 .menu li a {
     color: white;
     text-decoration: none;
